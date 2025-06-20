@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Enjoy premium Korean bingsu 24/7 from ByteSno's unmanned robotic kiosks across Singapore. No wait. No staff. Just pure dessert bliss." />
+  <meta property="og:image" content="path-to-share-image.jpg" />
+  <title>ByteSno - Bingsu. 24/7. Zero Staff. Zero Wait.</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', sans-serif; color: #333; line-height: 1.6; background: #FFFDE7; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    header, nav, section, footer { width: 100%; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; }
+    header { background: linear-gradient(90deg, #FFF176 0%, #FFD600 100%); padding: 20px 0; box-shadow: 0 2px 8px #fff9c4; position: sticky; top: 0; z-index: 1000; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    nav li { font-weight: 600; }
+    nav a:hover, nav a.active { border-bottom: 2px solid #fbc02d; }
+
+    .hero { text-align: center; padding: 80px 20px; background: linear-gradient(180deg, #FFF9C4 0%, #FFFDE7 100%); }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 20px; color: #FFD600; text-shadow: 1px 1px 0 #fffde7; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; color: #FBC02D; }
+    .cta { background: #FFD600; color: #fff; padding: 15px 30px; border-radius: 5px; font-weight: bold; box-shadow: 0 2px 8px #fff9c4; transition: background 0.3s ease; }
+    .cta:hover { background: #fbc02d; color: #fffde7; }
+
+    section { padding: 60px 20px; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #FBC02D; text-shadow: 1px 1px 0 #fffde7; }
+    .grid { display: grid; gap: 20px; }
+    .about .grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .menu .grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .menu .grid div { background: #FFF9C4; border-radius: 12px; box-shadow: 0 2px 8px #fffde7; padding: 20px; text-align: center; }
+    .menu .grid img { border-radius: 50%; border: 4px solid #FFD600; background: #fff; margin-bottom: 10px; width: 120px; height: 120px; object-fit: cover; }
+    .how-it-works .step { text-align: center; }
+    .step h3 { margin-bottom: 10px; color: #FFD600; }
+    .faq details { margin-bottom: 15px; transition: all 0.3s ease; }
+    .faq summary { font-weight: 600; cursor: pointer; }
+    details[open] summary::after { content: "–"; float: right; }
+    summary::after { content: "+"; float: right; }
+
+    footer { background: #FFD600; color: #fff; text-align: center; padding: 20px 0; }
+    footer p { margin-bottom: 5px; }
+
+    @media (max-width: 768px) {
+      nav ul { flex-direction: column; display: none; }
+      nav ul.show { display: flex; }
+      #menu-toggle { display: block; margin-left: auto; margin-right: 20px; background: none; border: none; font-size: 2rem; color: #333; cursor: pointer; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <img src="logo.png" alt="ByteSno company logo - robotic bingsu service" width="80" />
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul id="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#membership">Membership</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img src="logo.png" alt="ByteSno logo" width="200" style="margin-bottom: 20px;" />
+        <h1>ByteSno</h1>
+        <p>⏱️ Bingsu. 24/7. Zero Staff. Zero Wait.</p>
+        <a class="cta" href="#locations">Find a Kiosk Near You</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About ByteSno</h2>
+        <div class="grid">
+          <p>
+            ByteSno combines the authentic flavors of Korean bingsu with cutting-edge robotics. Our unmanned
+            kiosks operate 24/7, so you can enjoy premium shaved ice desserts anytime—no staff needed. Fast,
+            hygienic, and irresistibly Instagrammable.
+          </p>
+          <p>
+            From classic Injeolmi to local-inspired Milo Dinosaur, our menu is curated for dessert lovers. With
+            zero wait and consistent quality, ByteSno elevates your sweet treat experience in Singapore.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="grid">
+          <div>
+            <img src="injolme.png" alt="Injeolmi Classic">
+            <h3>Injeolmi Classic</h3>
+            <p>Traditional rice cake and nutty soybean powder over fluffy shaved ice.</p>
+          </div>
+          <div>
+            <img src="mango.png" alt="Mango Tango">
+            <h3>Mango Tango</h3>
+            <p>Fresh mango cubes, syrup drizzle, and mango sorbet.</p>
+          </div>
+          <div>
+            <img src="chocolate.png" alt="Choco Overload">
+            <h3>Choco Overload</h3>
+            <p>Chocolate shavings, fudge sauce, and cacao powder topping.</p>
+          </div>
+          <div>
+            <img src="milo dinosaur.png" alt="Milo Dinosaur">
+            <h3>Milo Dinosaur</h3>
+            <p>Crunchy Milo powder meets our soft shaved ice—Singaporean favorite.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations">
+      <div class="container">
+        <h2 class="section-title">Locations</h2>
+        <p style="text-align:center;">Coming Soon: Interactive map of ByteSno kiosks across Singapore.</p>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit,minmax(200px,1fr));">
+          <div class="step">
+            <h3>1. Order & Pay</h3>
+            <p>Choose your flavor on the touchscreen or scan QR to order via mobile.</p>
+          </div>
+          <div class="step">
+            <h3>2. Watch the Robot</h3>
+            <p>See your bingsu assembled by our robotic chef in real time.</p>
+          </div>
+          <div class="step">
+            <h3>3. Pick Up & Enjoy</h3>
+            <p>Grab your bowl, snap your perfect shot, and dig in—no waiting required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <details>
+          <summary>Is ByteSno food safe?</summary>
+          <p>Yes. All machines self-sanitize and ingredients are stored under SFA-compliant conditions.</p>
+        </details>
+        <details>
+          <summary>How do refunds work?</summary>
+          <p>If an order fails, you will receive an instant digital refund or a redeemable coupon.</p>
+        </details>
+        <details>
+          <summary>Are there vegan options?</summary>
+          <p>Yes. We offer plant-based milk and vegan toppings—just select the vegan label.</p>
+        </details>
+        <details>
+          <summary>Can I franchise?</summary>
+          <p>Franchise opportunities will open after our pilot phase. Contact us to express interest.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container" style="text-align:center;">
+        <h2 class="section-title">Contact & Support</h2>
+        <address>
+          <p>Need help? Reach us 24/7:</p>
+          <p>Email: <a href="mailto:support@bytesno.com">support@bytesno.com</a></p>
+          <p>Phone/WhatsApp: +65 1234 5678</p>
+        </address>
+      </div>
+    </section>
+
+    <section id="quiz" class="quiz">
+      <div class="container">
+        <h2 class="section-title">Which Bingsu Matches Your Personality?</h2>
+        <div class="grid">
+          <div>
+            <form id="bingsu-quiz" style="text-align:left; max-width:400px; margin:auto;">
+              <label>1. What flavor profile do you prefer?<br>
+                <input type="radio" name="flavor" value="mango"> Fruity<br>
+                <input type="radio" name="flavor" value="chocolate"> Chocolatey<br>
+                <input type="radio" name="flavor" value="injolme"> Nutty<br>
+                <input type="radio" name="flavor" value="milo"> Malted<br>
+              </label><br>
+              <label>2. How adventurous are you with desserts?<br>
+                <input type="radio" name="adventure" value="high"> Very!<br>
+                <input type="radio" name="adventure" value="medium"> Sometimes<br>
+                <input type="radio" name="adventure" value="low"> I like classics<br>
+              </label><br>
+              <button type="submit" class="cta">See My Bingsu</button>
+            </form>
+            <div id="quiz-result" style="margin-top:20px; font-weight:bold;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram" class="instagram">
+      <div class="container">
+        <h2 class="section-title">#ByteSno Moments</h2>
+        <div class="grid">
+          <div>
+            <iframe src="https://www.instagram.com/p/CI6JzNYB1Fk/embed" width="300" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+          </div>
+          <div>
+            <iframe src="https://www.instagram.com/p/CHvM6-NhtJY/embed" width="300" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="membership" class="membership">
+      <div class="container">
+        <h2 class="section-title">ByteSno Membership</h2>
+        <div class="grid">
+          <div>
+            <form id="membership-form" style="max-width:400px; margin:auto;">
+              <label>Name:<br><input type="text" name="name" required></label><br><br>
+              <label>Email:<br><input type="email" name="email" required></label><br><br>
+              <button type="submit" class="cta">Join the Club</button>
+            </form>
+            <div id="membership-result" style="margin-top:20px; font-weight:bold;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ByteSno. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+
+    // Quiz logic
+    document.getElementById('bingsu-quiz')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const flavor = this.flavor.value;
+      const adventure = this.adventure.value;
+      let result = '';
+      if (flavor === 'mango') result = 'Mango Tango: You love fruity, tropical vibes!';
+      else if (flavor === 'chocolate') result = 'Choco Overload: You crave rich, chocolatey goodness!';
+      else if (flavor === 'injolme') result = 'Injeolmi Classic: You appreciate tradition and nutty flavors!';
+      else if (flavor === 'milo') result = 'Milo Dinosaur: You are playful and love local favorites!';
+      if (adventure === 'high') result += ' You are adventurous and always try new things!';
+      else if (adventure === 'medium') result += ' You like a mix of new and classic.';
+      else result += ' You stick to what you love.';
+      document.getElementById('quiz-result').textContent = result;
+    });
+
+    // Membership logic
+    document.getElementById('membership-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      if (name && email) {
+        document.getElementById('membership-result').textContent = `Welcome, ${name}! Check your email (${email}) for your ByteSno membership perks.`;
+        this.reset();
+      } else {
+        document.getElementById('membership-result').textContent = 'Please fill in all fields.';
+      }
+    });
+  </script>
+</body>
+</html>
